@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Martin Place in Sydney: its history, landmarks, memorials, architecture and visitor tips.">
+  <title>Martin Place, Sydney | The Heart of the City</title>
+  <style>
+    :root{--navy:#10283f;--blue:#174c70;--gold:#d5ad67;--cream:#f6f3ed;--ink:#243342;--muted:#647383;--white:#fff}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(16,40,63,.97);color:white;box-shadow:0 3px 18px #0002}
+    .nav{max-width:1160px;margin:auto;padding:0 24px;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:1.5px;text-decoration:none;font-size:1.05rem}
+    .brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap}
+    .navlinks a{font-size:.88rem;text-decoration:none;color:#eef3f7}
+    .navlinks a:hover{color:var(--gold)}
+    .hero{min-height:590px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(8,26,42,.88),rgba(8,26,42,.38)),url('https://a-ap.storyblok.com/f/3000271/2322x1548/672a1f85ff/mp-district_photo-credit_team-24_36.jpg') center 48%/cover}
+    .hero-inner{max-width:1160px;width:100%;margin:auto;padding:90px 24px}
+    .eyebrow{color:#f0d5a5;text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:bold}
+    h1{font-family:Georgia,serif;font-size:clamp(3rem,7vw,5.8rem);line-height:1.02;max-width:760px;margin:18px 0}
+    .hero p{font-size:1.18rem;max-width:620px;color:#f0f3f5}
+    .btn{display:inline-block;margin-top:18px;padding:13px 22px;background:var(--gold);color:#14283a;text-decoration:none;font-weight:bold;border-radius:3px}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);max-width:1000px;margin:-40px auto 0;position:relative;padding:0 20px}
+    .fact{background:white;padding:24px;text-align:center;box-shadow:0 8px 30px #10283f18;border-right:1px solid #e8e4dc}
+    .fact:last-child{border:0}.fact strong{display:block;color:var(--blue);font: bold 1.8rem Georgia,serif}.fact span{font-size:.86rem;color:var(--muted)}
+    section{padding:82px 24px}.wrap{max-width:1100px;margin:auto}
+    .kicker{color:#9b7436;text-transform:uppercase;letter-spacing:2px;font-size:.76rem;font-weight:bold}
+    h2{font: bold clamp(2rem,4vw,3rem) Georgia,serif;color:var(--navy);line-height:1.15;margin:8px 0 20px}
+    .intro{font-size:1.08rem;color:#536272;max-width:780px}
+    .two{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .photo{width:100%;height:390px;object-fit:cover;border-radius:4px;box-shadow:0 12px 35px #10283f20}
+    .cream{background:var(--cream)}
+    .timeline{border-left:2px solid #d9bd8b;margin:28px 0 0 8px;padding-left:26px}
+    .event{position:relative;margin:0 0 25px}.event:before{content:"";position:absolute;left:-33px;top:8px;width:12px;height:12px;background:var(--gold);border:3px solid var(--cream);border-radius:50%}
+    .event strong{color:var(--blue);font-size:1.05rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+    .card{background:white;border:1px solid #e8e5df;box-shadow:0 8px 22px #10283f0b}
+    .card img{width:100%;height:205px;object-fit:cover;display:block}
+    .card-body{padding:22px}.card h3{font: bold 1.35rem Georgia,serif;color:var(--navy);margin:0 0 8px}
+    .card p{margin:0;color:#5c6874;font-size:.95rem}
+    .tipgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+    .tip{padding:22px;background:#fff;border-left:3px solid var(--gold);box-shadow:0 5px 18px #10283f0b}
+    .tip h3{margin:0 0 5px;color:var(--navy);font-size:1.05rem}
+    .mapbox{background:var(--navy);color:white;padding:42px;border-radius:5px;display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:30px}
+    .mapbox h3{font: bold 1.7rem Georgia,serif;margin:0 0 8px}.mapbox p{margin:0;color:#dce5ec}
+    .mapbox .btn{white-space:nowrap}
+    .sources{font-size:.9rem;color:#65717d}.sources a{color:#174c70}
+    footer{background:#0b1d2d;color:#dce4eb;padding:38px 24px;text-align:center}
+    footer p{margin:5px}.small{font-size:.83rem;color:#b9c6d0}
+    @media(max-width:760px){.nav{padding:14px 18px;align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.hero{min-height:540px}.facts{grid-template-columns:1fr;margin-top:0;padding:0}.fact{border-right:0;border-bottom:1px solid #eee}.two,.cards,.tipgrid{grid-template-columns:1fr}.two{gap:26px}.photo{height:280px}.mapbox{padding:28px;align-items:flex-start;flex-direction:column}section{padding:60px 20px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand" href="#home">MARTIN <span>PLACE</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#history">History</a><a href="#landmarks">Landmarks</a><a href="#visit">Visit</a>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Sydney · New South Wales · Australia</div>
+      <h1>Martin Place</h1>
+      <p>Discover the civic heart of Sydney — a grand pedestrian boulevard where history, architecture and modern city life meet.</p>
+      <a class="btn" href="#about">Explore Martin Place ↓</a>
+    </div>
+  </section>
+
+  <div class="facts" aria-label="Quick facts">
+    <div class="fact"><strong>1892</strong><span>First section officially opened</span></div>
+    <div class="fact"><strong>1971–1979</strong><span>Pedestrianisation completed in stages</span></div>
+    <div class="fact"><strong>CBD</strong><span>Central business district of Sydney</span></div>
+  </div>
+
+  <section id="about">
+    <div class="wrap two">
+      <div>
+        <div class="kicker">A city landmark</div>
+        <h2>What is Martin Place?</h2>
+        <p class="intro">Martin Place is a famous pedestrian public space in the centre of Sydney, in the state of New South Wales. It stretches between George Street and Macquarie Street, surrounded by historic buildings, offices, cafés and cultural landmarks.</p>
+        <p>It is more than a street: it is a meeting place for residents, workers and visitors. People come here to admire the architecture, take a break, attend public events and remember important moments in Australian history.</p>
+      </div>
+      <img class="photo" src="https://a-ap.storyblok.com/f/3000271/2322x1548/672a1f85ff/mp-district_photo-credit_team-24_36.jpg" alt="Pedestrians walking beside the historic sandstone buildings of Martin Place">
+    </div>
+  </section>
+
+  <section id="history" class="cream">
+    <div class="wrap two">
+      <div>
+        <div class="kicker">From a lane to a landmark</div>
+        <h2>A story through time</h2>
+        <p>Martin Place developed alongside Sydney's growth. Its name honours Sir James Martin, a former Premier and Chief Justice of New South Wales.</p>
+        <div class="timeline">
+          <div class="event"><strong>1860s–1892</strong><br>The area beside the General Post Office developed from a narrow lane into a wider public street. Martin Place officially opened in September 1892.</div>
+          <div class="event"><strong>1921–1935</strong><br>The street was extended eastwards. By 1935, it connected George Street with Macquarie Street.</div>
+          <div class="event"><strong>1929</strong><br>The Sydney Cenotaph was unveiled as a memorial to Australians who died in service during the First World War.</div>
+          <div class="event"><strong>1971–1979</strong><br>Sections were progressively closed to traffic, creating the pedestrian place visitors see today.</div>
+        </div>
+      </div>
+      <img class="photo" src="https://archives.cityofsydney.nsw.gov.au/assets/display/3199212-max?u=edc38e4562475602926b89b38bb39fcd" alt="Historic photograph of Martin Place and the General Post Office in 1933">
+    </div>
+  </section>
+
+  <section id="landmarks">
+    <div class="wrap">
+      <div class="kicker">See and discover</div>
+      <h2>Landmarks not to miss</h2>
+      <p class="intro">Look around and you will find a mix of heritage architecture, public art and places that tell the story of Sydney.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="https://a-ap.storyblok.com/f/3000271/2322x1548/672a1f85ff/mp-district_photo-credit_team-24_36.jpg" alt="Historic General Post Office building in Martin Place">
+          <div class="card-body"><h3>The General Post Office (GPO)</h3><p>This grand sandstone building is one of Martin Place's best-known landmarks. Its clock tower and detailed façade make it a highlight for architecture lovers.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://www.cityofsydney.nsw.gov.au/-/media/corporate/images/attractions/monuments-and-memorials/cenotaph/newcenotaph_2.jpg?h=1380&hash=D0A7ECA8C01E04EA6C36C72BB5F154CB&iar=0&w=2048" alt="The Sydney Cenotaph memorial">
+          <div class="card-body"><h3>The Sydney Cenotaph</h3><p>Unveiled in 1929, this granite memorial honours Australians who died in service during the First World War. A soldier and a sailor stand beside it.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://media4.architecturemedia.net/site_media/media/cache/c7/4d/c74d6cfc3af3d90655acecfe762daeec.jpg" alt="The clock tower of the General Post Office">
+          <div class="card-body"><h3>Historic architecture</h3><p>Martin Place is lined with impressive heritage façades and modern office buildings. Look for stonework, columns, arches and decorative details.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cream" id="visit">
+    <div class="wrap">
+      <div class="kicker">Plan your visit</div>
+      <h2>Make the most of your time</h2>
+      <p class="intro">Martin Place is an easy place to explore on foot in the heart of central Sydney.</p>
+      <div class="tipgrid">
+        <div class="tip"><h3>🚶 Explore on foot</h3><p>Walk along the pedestrian boulevard and take time to notice the different building styles.</p></div>
+        <div class="tip"><h3>📷 Take photographs</h3><p>The GPO façade, clock tower and Cenotaph are memorable photo subjects. Be respectful around the memorial.</p></div>
+        <div class="tip"><h3>☕ Take a break</h3><p>Find cafés and places to eat in the surrounding city streets and nearby buildings.</p></div>
+        <div class="tip"><h3>🎉 Look for events</h3><p>Martin Place is used for public gatherings, ceremonies and seasonal events. Check local listings before visiting.</p></div>
+      </div>
+      <div class="mapbox">
+        <div><h3>Where is Martin Place?</h3><p>Martin Place, Sydney NSW 2000, Australia<br>In the heart of Sydney's Central Business District.</p></div>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Martin+Place+Sydney+Australia" target="_blank" rel="noopener">Open map ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">Did you know?</div>
+      <h2>Three interesting facts</h2>
+      <div class="tipgrid">
+        <div class="tip"><h3>Its name has a story</h3><p>Martin Place is named after Sir James Martin, who served as Premier and Chief Justice of New South Wales.</p></div>
+        <div class="tip"><h3>A place for remembrance</h3><p>The Cenotaph is an important focus for commemorative ceremonies, including Anzac Day services.</p></div>
+        <div class="tip"><h3>A lively public space</h3><p>Today, the boulevard is used for everyday city life as well as major public events and celebrations.</p></div>
+        <div class="tip"><h3>On Gadigal Country</h3><p>Martin Place is on the traditional lands of the Gadigal people of the Eora Nation. Their connection to the area goes back long before the modern city.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cream">
+    <div class="wrap">
+      <div class="kicker">Learn more</div>
+      <h2>Sources & useful links</h2>
+      <p class="sources">Information on this page is based on public heritage and city sources. Image credits belong to their respective publishers.</p>
+      <ul class="sources">
+        <li><a href="https://www.cityofsydney.nsw.gov.au/monuments-and-memorials/sydney-cenotaph" target="_blank" rel="noopener">City of Sydney — Sydney Cenotaph</a></li>
+        <li><a href="https://www.cityofsydney.nsw.gov.au/" target="_blank" rel="noopener">City of Sydney — official website</a></li>
+        <li><a href="https://www.neonmarketplace.nsw.gov.au/organisation/mp-district/martin-place" target="_blank" rel="noopener">NSW Government — Martin Place precinct</a></li>
+        <li><a href="https://dictionaryofsydney.org/entry/martin_place" target="_blank" rel="noopener">Dictionary of Sydney — Martin Place history</a></li>
+        <li><a href="https://www.1elizabeth.com.au/the-precinct/heritage-and-history.html" target="_blank" rel="noopener">1 Elizabeth — Heritage and history</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>
+  <p><strong>MARTIN PLACE · SYDNEY, AUSTRALIA</strong></p>
+  <p class="small">A student tourism guide · Discover the heart of Sydney</p>
+</footer>
+</body>
+</html>
